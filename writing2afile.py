@@ -1,4 +1,4 @@
-# A program that edits the content of a file. (@roiminuit)
+# A program that writes to a file. (@roiminuit)
 
 from sys import argv
 script, filename = argv
