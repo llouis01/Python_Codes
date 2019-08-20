@@ -1,4 +1,4 @@
-# a program that reads files
+# a program that reads files (@roiminuit)
 
 from sys import argv # this loc imports the features for the script
 
