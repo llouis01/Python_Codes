@@ -1,6 +1,6 @@
-# a program that reads files (@roiminuit)
+# a program that reads files. Python 2 (@roiminuit)
 
-from sys import argv # this loc imports the features for the script
+from sys import argv # this line of code imports the features for the script
 
 script, filetoberead = argv # pos0 is the script name, pos1 is file to be read
 
