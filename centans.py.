@@ -1,3 +1,8 @@
+'''
+program that takes input (name, birthdate) from user and tells them how old they are, when will they turn a hundred 
+and how far after New Year's Day they were born. Written in Python 2.
+'''
+
 from datetime import date
 from datetime import time
 from datetime import datetime
