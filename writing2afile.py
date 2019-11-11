@@ -1,4 +1,4 @@
-# A program that writes to a file. (@roiminuit)
+# A program that writes to a file. Py2.7 (@roiminuit)
 
 from sys import argv
 script, filename = argv
