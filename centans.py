@@ -40,7 +40,7 @@ print(f'You were born {user_month - 1} month(s) and, {user_day - 1} days after N
 if (user_month == (today.strftime('%B')) and user_day == (today.strftime('%d'))):
     print(f'Happy Birthday, {user_name}!')
 else:
-    print('\n')
+    print('\n') # Why is this not working?
 
 # need to include months
 
