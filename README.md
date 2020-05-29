@@ -1,2 +1,3 @@
 ### Learning Python ###
-My goal is to become a sufficeint Python programmer who is able to write working and useful programs.
+
+Utilizing Python to analyze data is a top priority for Analysts. My goal is to achieve that readiness through constant practicing.
