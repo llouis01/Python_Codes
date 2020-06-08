@@ -7,7 +7,7 @@ import pandas as pd
 num1, num2, num3, num4, num5 = input("Enter 5 numbers: ").split() # must convert the entry to int then space between entries
 print()
 
-print("*** Basic analysis of your numbers ***")
+print("*** Basic analysis of your entries ***")
 print()
 
 if num1 > num5:
@@ -33,7 +33,7 @@ print("The median is ", np.median(np_nums))
 print("There is no correlation between the numbers; hence a score of ", np.corrcoef(np_nums))
 print()
 
-print("*** Using Numpy on a dataset ***")
+print("*** Using Numpy on a dataset of height and weight for males and females ***")
 print()
 
 htwt = np.array(pd.read_csv("C:\\Users\\Loube\\Desktop\\htwt.csv")) # quote and \\ to import file
@@ -71,4 +71,7 @@ print("While the average height for females is ", np.mean(fmale_htwt[:,0]))
 
 print()
 print("The average weight for males is ", np.mean(male_htwt[:,1]))
-print("And for females it is ", np.mean(fmale_htwt[:,1])) 
+print("And for females it is ", np.mean(fmale_htwt[:,1]))
+
+print()
+print("The correlation of height and weight for males is ", np.corrcoef(male_htwt[:,0], male_htwt[:,1]))
