@@ -42,18 +42,18 @@ print()
 print("                 ***************             ")
 
 males_only = htwt[htwt[:, 0]=='Male'] #subsetting to get all males
-print()
+# print()
 
-print("Male Breakdown")
-print()
-print(males_only)
+# print("Male Breakdown")
+# print()
+# print(males_only)
 
 fmales_only = htwt[htwt[:, 0]=='Female']
-print()
+# print()
 
-print("Female Breakdown")
-print()
-print(fmales_only)
+#print("Female Breakdown")
+# print()
+# print(fmales_only)
 
 print()
 print("Male frame only")
@@ -64,3 +64,11 @@ print()
 print("Females frame only")
 fmale_htwt = fmales_only[:,1:3]
 print(fmale_htwt)
+
+print()
+print("Average height for males is ", np.mean(male_htwt[:,0]))
+print("While the average height for females is ", np.mean(fmale_htwt[:,0]))
+
+print()
+print("The average weight for males is ", np.mean(male_htwt[:,1]))
+print("And for females it is ", np.mean(fmale_htwt[:,1])) 
