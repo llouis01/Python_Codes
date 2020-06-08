@@ -74,4 +74,4 @@ print("The average weight for males is ", np.mean(male_htwt[:,1]))
 print("And for females it is ", np.mean(fmale_htwt[:,1]))
 
 print()
-print("The correlation of height and weight for males is ", np.corrcoef(male_htwt[:,0], male_htwt[:,1]))
+# print("The correlation of height and weight for males is ", np.corrcoef(male_htwt[:,0], male_htwt[:,1]))
