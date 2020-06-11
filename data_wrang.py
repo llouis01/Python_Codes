@@ -4,6 +4,8 @@ import numpy as np
 
 import pandas as pd
 
+import matplotlib.pyplot as plt
+
 num1, num2, num3, num4, num5 = input("Enter 5 numbers: ").split() # must convert the entry to int then space between entries
 print()
 
@@ -75,3 +77,17 @@ print("And for females it is ", np.mean(fmale_htwt[:,1]))
 
 print()
 # print("The correlation of height and weight for males is ", np.corrcoef(male_htwt[:,0], male_htwt[:,1]))
+
+plt.scatter(male_htwt[:,0], male_htwt[:,1], color = 'purple')
+plt.title("Male Height & Weight")
+plt.xlabel("Height")
+plt.ylabel("Weight")
+plt.show()
+
+print()
+
+plt.scatter(fmale_htwt[:,0], fmale_htwt[:,1], color = 'purple')
+plt.title("Female Height & Weight")
+plt.xlabel("Height")
+plt.ylabel("Weight")
+plt.show()
