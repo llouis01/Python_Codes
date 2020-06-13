@@ -8,3 +8,8 @@ I will comment it in the begining of the program.
 ### New Guidelines ###
 
 Starting from today, I will provide instructions about programs I create in this repository in this document.
+
+### Dict.py ###
+
+Manipulating a dictionary in python. Worked on adding keys, updating values, deleting keys and 
+using chained commands to pull info from a dictionary of dictionary.
