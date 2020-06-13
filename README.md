@@ -13,3 +13,8 @@ Starting from today, I will provide instructions about programs I create in this
 
 Manipulating a dictionary in python. Worked on adding keys, updating values, deleting keys and 
 using chained commands to pull info from a dictionary of dictionary.
+
+### Pds.py ### 
+
+Working with Pandas to manipulate data.
+1) import dataset or create one; transform it into a dataframe using pandas.DataFrame(dataset)
