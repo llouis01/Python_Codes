@@ -22,7 +22,7 @@ print("Population of Zoolandia is", ctr_pop['Zoolandia'], "million.") # var[key]
 print()
 
 """
-dictionaries cannot contain dupplicates and contents are immutable objects.
+dictionaries cannot contain duplicates and contents are immutable objects.
 if I try to include another key that already exists, the value will be up-
 dated but the additional key will not be included.
 """
@@ -31,3 +31,33 @@ ctr_pop = {'Haiti' : 11.2, 'Zoolandia' : 32.4, 'Wakanda' : 333.1,
            'Diagon Alley' : 0.002, 'Zoolandia' : 39.3}
 
 print(ctr_pop) # the last value entered for the preexisting key will be kept
+print()
+
+ctr_pop["Hogwarts"] = 0.000035 # adding to a dict with dict[key_to_add] = key_value
+print(ctr_pop)
+print()
+
+print("Seaburst" in ctr_pop) # bool check if a key is present
+print()
+
+ctr_pop["Haiti"] = 12.0 # updating a key
+print(ctr_pop)
+print()
+
+del(ctr_pop["Hogwarts"]) # removing elements from a dictionary
+print(ctr_pop)
+print()
+
+ctr_pop["Haiti"] = {'capital': 'port-au-prince', 'population': 3} # dictionary can be a dictionary of dictionary
+ctr_pop["Zoolandia"] = {'capital': 'zoopitoo', 'population': 1.3}
+ctr_pop["Wakanda"] = {'capital': 'Harlem', 'population': 0.7}
+ctr_pop["Diagon Alley"] = {'capital': 'London', 'population': 1.8}
+print(ctr_pop)
+print()
+
+print(ctr_pop['Wakanda']['capital'])
+print()
+
+murder_stats = {'homicide': 'not enough data', 'accidents': 'not enough data'}
+ctr_pop['Murder Total']= murder_stats
+print(ctr_pop)
