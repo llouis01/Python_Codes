@@ -18,3 +18,5 @@ using chained commands to pull info from a dictionary of dictionary.
 
 Working with Pandas to manipulate data.
 1) import dataset or create one; transform it into a dataframe using pandas.DataFrame(dataset)
+2) transforming datasets into appropriate dataframe
+3) specifying which column is used for row labels with index_col parameter
