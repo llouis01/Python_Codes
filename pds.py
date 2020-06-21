@@ -8,7 +8,7 @@ students = {
     'Major': ["Economics", 'Economics and Finance', 'Accounting']
 }
 
-# manually build a dataframe
+# manually build a data frame
 print(students)
 new_students = pd.DataFrame(students)
 print()
@@ -16,7 +16,7 @@ print(new_students)
 print()
 
 row_labels = ['LL', 'VR', 'PS']
-new_students.index = row_labels # changing the index from generic to custom 'LL'...
+new_students.index = row_labels # changing the row labels from generic to custom 'LL'...
 print(new_students)
 print()
 
