@@ -1,7 +1,7 @@
 # Data Visualization with matplotlib with non-factual data
 
 import matplotlib.pyplot as plt
-
+# matplotlib inline
 import numpy as np
 
 s = np.random.normal(0, 2, 100)
