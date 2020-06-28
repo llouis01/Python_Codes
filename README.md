@@ -29,4 +29,5 @@ In this script, I am experimenting with boolean operators on dataframes.
 
 Pulled down dataset with daily counts of Covid-19 stats. Calculated the average and rearranged 
 dataset broken monthly. Then I used Matplotlip and Pandas to draw a graph of the monthly 
-average death counts.
+average death counts. 
+1. Attenpting to subset dates and accompanying data instead of previous method
