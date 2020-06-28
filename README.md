@@ -23,4 +23,10 @@ Working with Pandas to manipulate data.
 
 ### Op.py ###
 
-In this script, I am experimenting with boolean operators and dataframes.
+In this script, I am experimenting with boolean operators on dataframes.
+
+### Nyc_cvd.py ###
+
+Pulled down dataset with daily counts of Covid-19 stats. Calculated the average and rearranged 
+dataset broken monthly. Then I used Matplotlip and Pandas to draw a graph of the monthly 
+average death counts.
