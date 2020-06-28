@@ -1,4 +1,4 @@
-# NYC Covid-19 Daily Count
+# NYC Covid-19 Average Monthly Count
 
 import matplotlib.pyplot as plt
 import pandas as pd
