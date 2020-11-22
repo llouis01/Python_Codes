@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-Created on Sat Nov 21 21:34:11 2020
+Created on Fri Nov 14 21:34:11 2020
 
 @author: Loube
 """
@@ -17,3 +17,4 @@ y(ur_list)
 
 
 # 
+z = lambda z: while (z > 1)  z * (z - 1)
