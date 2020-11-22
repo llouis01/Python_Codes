@@ -30,3 +30,6 @@ f = lambda x: x**2
 
 y = f(2)
 print(y)
+
+net_income = lambda x: x * .79
+net_income(95500) / 26
