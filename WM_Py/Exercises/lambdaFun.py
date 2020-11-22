@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-Created on Fri Nov 14 21:34:11 2020
+Created on Fri Nov 19 21:34:11 2020
 
 @author: Loube
 """
@@ -16,5 +16,5 @@ y = lambda y: type(y[0])
 y(ur_list)
 
 
-# 
-z = lambda z: while (z > 1)  z * (z - 1)
+# I will call z on itself to perform the recursion
+z = lambda i: i * z(i -1) if (i > 1) else 1
