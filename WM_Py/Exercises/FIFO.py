@@ -11,11 +11,21 @@ data = f_in.readlines()
 f_in.close() # always close file
 
 ### data wrangling
-for i in range(len(data)):
+for i in range(len(data)):# we don't know length of df, so do range(len(df))
     data[i] = data[i].strip().split(',') # removes the \n and splits by ,
     data[i] = [data[i][0][-5:], float(data[i][1])]
-    # for j in range(len(data[i])):
-    #     if j == 1:
-    #         data[i][j] = float(data[i][j])
-    #     if j == 0:
-    #         data[i][j] = data[i][j][-5:] # slice on the timeseries
+
+
+x = [datum[0] for datum in data]
+y = [datum[1] for datum in data]
+
+import matplotlib.pyplot as plt
+
+plt.plot(y)
+plt.suptitle('San Francisco, CA Housing Prices')
+plt.xlabel('YY-MM')
+plt.ylabel('Average Home Price')
+plt.gcf().set_size_inches(12,6)
+p = 20
+plt.xticks(range(0, len(x),p), [x[i] for i in range(len(x)) if i % 20 ==0])
+plt.show()
