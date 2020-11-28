@@ -30,9 +30,12 @@ for i in range(len(statesData)-1):
 
 
 # We can verify each element type by replacing the numbers between 0 and 4
-for i in range(len(statesData)):
-    print(type(statesData[i][4]))
+# for i in range(len(statesData)):
+#     print(type(statesData[i][4]))
     
 
-# 
-sums = [sum(row[i+1]) for row in statesData]
+# I transposed the data table to facilitate the summation of columns
+sums = [sum(item[1:]) for item in list(map(list, zip(*statesData)))[1:]]
+
+print('\nIn that order, the sum of population, electoral votes,' 
+      ' highway miles and square miles are: ', sums)

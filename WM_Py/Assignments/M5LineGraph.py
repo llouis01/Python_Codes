@@ -13,12 +13,10 @@ data = [['Jun',4.3],['Jul',4.3],['Aug',4.4],['Sep',4.2],['Oct',4.1],['Nov',4.1],
 import matplotlib.pyplot as plt
     
 x = [datum[0] for datum in data]
-    
-    
 y = [datum[1] for datum in data]
 
-plt.plot(y)
+plt.plot(x, y)
 plt.suptitle('U.S. Unemployment Rate')
-plt.xlabel('Unemployment Rate')
-plt.ylabel('Month')
+plt.xlabel('Month')
+plt.ylabel('Unemployment Rate')
 plt.show()
