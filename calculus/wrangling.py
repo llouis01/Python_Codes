@@ -36,7 +36,10 @@ col_names = ['contract_transaction_unique_key', 'contract_award_unique_key',
              'funding_office_name', 'recipient_name']
 
 # new df with only fbi data and fewer columns
-child3 = child1[col_names].copy()
+child3 = child2[col_names].copy()
 
 # change name of certain columns
-child3.rename(columns={''})
+child3.rename(columns={'award_id_piid':'document_number',
+                       'federal_action_obligation':'obligation',
+                       'action_date_fiscal_year':'fiscal_year',
+                       'recipeient_name':'vendor'}, inplace=True)
