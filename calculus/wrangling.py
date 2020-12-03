@@ -7,6 +7,7 @@ Created on Wed Dec  2 12:08:11 2020
 
 import pandas as pd
 import os
+import numpy as np
 
 ##### find files in this directory
 os.chdir('C:\\Users\\Loube\\Documents\\FY_files')
@@ -43,3 +44,13 @@ child3.rename(columns={'award_id_piid':'document_number',
                        'federal_action_obligation':'obligation',
                        'action_date_fiscal_year':'fiscal_year',
                        'recipient_name':'vendor'}, inplace=True)
+
+# add new columns based on existing columns
+child3['de_obligation'] = np.where(child3['obligation']<0,
+                                    child3['obligation'], 0)
+
+child3['de_obligation'] = child3.de_obligation.apply(lambda x: x * -1 if x < 0 else 0)
+
+child3['additional obligation'] = child3.obligation.apply(lambda x: 0 if x < 0 else x)
+
+child3['original base'] = child3['o']
