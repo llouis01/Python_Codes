@@ -22,24 +22,18 @@ child1 = child2[child2['awarding_sub_agency_name']=='FEDERAL BUREAU OF INVESTIGA
 # clears white space
 child1['funding_office_name'].replace({' +':' '}, regex=True, inplace = True)
 
-# consolidate filed offices under one element
-replace_with = [('FILED OFFICE', 'FIELD OFFICES')]
-
-
-child1['funding_office_name'].replace({' FIELD OFFICE':'FIELD OFFICE'},
+# consolidate all field offices into one entity
+child1['funding_office_name'].replace({r'.*FIELD OFFICE':'FIELD OFFICES'},
                                       regex=True, inplace = True)
 
+# pull out these columns for new data set
+col_names = ['contract_transaction_unique_key', 'contract_award_unique_key',
+             'award_id_piid', 'federal_action_obligation', 'total_dollars_obligated',
+             'base_and_exercised_options_value', 'current_total_value_of_award',
+             'base_and_all_options_value', 'potential_total_value_of_award',
+             'action_date_fiscal_year', 'period_of_performance_start_date',
+             'period_of_performance_current_end_date', 'awarding_office_name',
+             'funding_office_name', 'recipient_name']
 
+child1 = child1[col_names].copy()
 
-
-
-
-
-
-# for old_name, new_name in replace_with:
-#     child1.loc[child1['funding_office_name'].str.contains(old_name),
-#                 'funding_office_name'] = new_name
-
-
-
-print(child1.shape)
