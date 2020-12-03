@@ -42,4 +42,4 @@ child3 = child2[col_names].copy()
 child3.rename(columns={'award_id_piid':'document_number',
                        'federal_action_obligation':'obligation',
                        'action_date_fiscal_year':'fiscal_year',
-                       'recipeient_name':'vendor'}, inplace=True)
+                       'recipient_name':'vendor'}, inplace=True)
